@@ -1,6 +1,23 @@
 
 def intersection(foo:str, bar:str) -> str | None:
-    if 
+    result = ''
+    for ch in foo:
+        if ch in bar and ch not in result: # not duplicates
+            result = result + ch #nothing + intersection of characters
+    return result if result else None # result is none if there is no intersection
+
+def is_alphabetical(string:str) -> bool:
+    valid = True
+    for i in range(len(string)):
+        ascii = ord(string[i]) #changes string into ascii
+        if not (97 <= ascii <= 122):
+            valid = False
+        if i > 0 and ord(ascii[i - 1]) > ascii:
+            valid = False
+    return valid
+
+def generate_palindrome(string:str) -> str | None:
+
 
 
 #--------------------------------------------------------------------------------#
