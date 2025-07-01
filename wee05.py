@@ -11,12 +11,44 @@ def is_alphabetical(string:str) -> bool:
     for i in range(len(string)):
         ascii = ord(string[i]) #changes string into ascii
         if not (97 <= ascii <= 122):
-            valid = False
+            valid = False # if not a letter return flase
         if i > 0 and ord(ascii[i - 1]) > ascii:
-            valid = False
+            valid = False # if not alphabetical return false
     return valid
 
+def letters_only(string:str) -> str | None:
+    result = ''
+    for i in range(len(string)):
+        ascii = ord(string[i])
+        if (65 <= ascii <= 90) or (97 <= ascii <= 122): #letter only
+            result = string[i]
+    return result if result != '' else None # if result is NOT empty, return result, else return NONE.
+
 def generate_palindrome(string:str) -> str | None:
+    resversed_string = '' # makes reversed_string able to hold a string inside?
+    i = len(string) - 1
+    while i >= 0:
+        reversed_string = reversed_string + string[i]
+        i = i - 1 # i is counting down from len(string)
+    result = string + reversed_string
+    return result if result != '' else None
+
+def is_palindrome(string:str) -> bool:
+    # ignore capitalization, punctuation, spaces
+    valid = True
+    filtered = ''
+    for i in range(len(string)): #filtering the string to only recognize letters, and numbers
+        ascii = ord(string[i])
+        if (65 <= ascii <= 90) or (97 <= ascii <= 122) or (48 <= ascii <= 57):
+            filtered = filtered + string[i].lower()
+    left = 0
+    right = len(filtered) - 1
+    while left < right: # by defining these sides as numbers, we are telling the program to only count before the midpoint
+        if filtered[left] != filtered[right]:
+            valid = False
+        left = left + 1
+        right = right - 1 #instructing how right and left should count.
+    return valid
 
 
 
