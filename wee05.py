@@ -51,6 +51,33 @@ def is_palindrome(string:str) -> bool:
     return valid
 
 """
+    MIDTERM REVIEW:
+
+    Within the first five assignments, I think my coding has gotten a lot better.
+    It's still challenging to be able to translate what I'm thinking into
+    computer-talk though. One mistake I repeated a few times was lack of comments. I've been trying
+    to get better by writing while I go to try to explain to myself
+    what is happening so it makes it a lot easier to understand
+    later on when I'm writing a relfection on it or something. All my code has executed at least
+    a little. I'm sure there are a lot of things I could have done better so they would be
+    more optimized, but they all ran without the terminal giving me errors. I have definitely been
+    better about trying to optimize things as much as I can and making it look cleaner
+    espeically because I get lost within all the words easily.
+
+    I think I have been very good about going to class and doing so on time. There was that one time
+    I had to leave early, but I hope my email beforehand made it less bad. I also think that my participation
+    and proactiveness has been good, like emailing you when I need help with the tests, and asking
+    questions in class when I have them. I have not done any additional problems, but I do think
+    reading code from the book links with explaination helps me learn. It's helpful to see code
+    that works and then internalizing why it works. I don't know if I have been putting as much
+    commitment into the course as 9 extra hours. Probably not that much. Whne moving
+    foreward, I will make an active effort to spend more time with this information than I am
+    currently, as well as making sure to start the homework earlier since it is currently 17:47
+    CT which is 22:47 UTC. Which is my fault for not following the first part of the instructions
+    which was reviewing the due date. 
+"""
+
+"""
 REFLECTION:
 
 1. For both the shortest and longest word tests, our code was very similar except
@@ -74,11 +101,6 @@ letter of the average of all the words.
 5. While your code has both f and b counting in both lists, I just counted
 in my first list and used "in" instead of "==" when defining found again. I'm not sure
 if mine has a problem or not. It passed the test.
-
-
-
-
-
 """
 
 #--------------------------------------------------------------------------------#
