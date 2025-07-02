@@ -50,7 +50,36 @@ def is_palindrome(string:str) -> bool:
         right = right - 1 #instructing how right and left should count.
     return valid
 
+"""
+REFLECTION:
 
+1. For both the shortest and longest word tests, our code was very similar except
+I did not define longest as None. I know that you set longest to None so the function
+would return None if the list of words did not meet the requirements. The code did pass the
+test so I think it would work. The only issue maybe would be clarity. The other differences
+between those two tests would be that you used "for word in words:" loop which I'm not sure
+if I fully understand that bit. I think it means "for each element (that we're calling "word")
+of the list words". I used range(1, len(words)) because that felt easier to me in the moment.
+
+2. Same thing as number 1.
+
+3. The same issue in my code where I did not write odd = None before the if statement, but again
+passed the test. And the word in words for statement difference.
+
+4. Our code seems to be relatively the same here too. The difference being you setting
+averages = None where I just put the whole thing in an if statement. It passed the test so I hope it's
+fine. And then I used the absolute value thing to see if the length of some word was woithin 1
+letter of the average of all the words.
+
+5. While your code has both f and b counting in both lists, I just counted
+in my first list and used "in" instead of "==" when defining found again. I'm not sure
+if mine has a problem or not. It passed the test.
+
+
+
+
+
+"""
 
 #--------------------------------------------------------------------------------#
 # ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎  WRITE YOUR CODE ABOVE THIS  LINE ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎
